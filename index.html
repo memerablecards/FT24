@@ -6,22 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Audio Website</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Disable text selection and copying -->
-    <style>
-        body {
-            user-select: none; /* Disable text selection */
-            -webkit-user-select: none; /* For Safari */
-            -moz-user-select: none; /* For Firefox */
-            -ms-user-select: none; /* For Internet Explorer */
-        }
-    </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to MEMErable cards!</h1>
         <audio controls>
-                <!-- Change audio source code here -->
             <source src="(Audio) EDITED_Funnier than 24.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
@@ -32,22 +21,11 @@
         <p>© 2024 MEMErable cards. All rights reserved.</p>
     </footer>
 
-    <!-- Disable right-click and keyboard shortcuts for copy (Ctrl+C), view source (Ctrl+U) -->
+    <!-- Disable right-click -->
     <script>
-        // Disable right-click
         document.addEventListener('contextmenu', event => event.preventDefault());
-
-        // Disable keyboard shortcuts (Ctrl+C, Ctrl+U, etc.)
-        document.addEventListener('keydown', function(event) {
-            if (event.ctrlKey && (event.key === 'c' || event.key === 'u' || event.key === 's' || event.key === 'a')) {
-                event.preventDefault();
-            }
-        });
-
-        // Disable text drag and drop
-        document.ondragstart = function() {
-            return false;
-        };
     </script>
+</body>
+</html>
 </body>
 </html>
